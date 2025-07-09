@@ -1,6 +1,6 @@
 console.log("hello world")
 let input = document.getElementById("my-input")
-let element = document.getElementById("tswcontainer")
+let element = document.getElementById("name")
 console.log(element)
 let angle = 0
 let shouldrainbow = true
@@ -12,13 +12,13 @@ function onframe(){
    }
     requestAnimationFrame(onframe)
 }
-onfram()
 function startrainbow(){
     shouldrainbow = true
 }
 function onbuttonclick(event){
 console.log(input.value)
 shouldrainbow = false;
-element.style.backgroundColor = input.value
+element.innerHTML = input.value
 setTimeout(startrainbow, 1000)
 }
+
