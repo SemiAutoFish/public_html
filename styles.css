@@ -88,6 +88,17 @@ div#tswfooter {
   z-index: 1;
 }
 
+.dropdown-content-projects {
+	display: none;
+	position: absolute;
+	background-color: #829bad;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	left: 100%;
+	top: 84px;
+  }
+  
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -98,5 +109,7 @@ div#tswfooter {
 .dropdown-content a:hover {background-color: #667a88;}
 
 .dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-projects:hover .dropdown-content-projects {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #b4d7f1;}
